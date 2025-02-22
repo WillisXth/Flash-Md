@@ -11,10 +11,10 @@ const databasePath = path.join(__dirname, './database.db');
 const DATABASE_URL = process.env.DATABASE_URL === undefined ? databasePath : process.env.DATABASE_URL;
 
 module.exports = {
-    session: process.env.SESSION_ID || 'FLASH-MD-WA-BOT;;;=>',
+    session: process.env.SESSION_ID || '',
     PREFIXES: (process.env.PREFIX || '').split(',').map(prefix => prefix.trim()).filter(Boolean),
-    OWNER_NAME: process.env.OWNER_NAME || "France King",
-    OWNER_NUMBER: process.env.OWNER_NUMBER || "254105915061",
+    OWNER_NAME: process.env.OWNER_NAME || "Willis",
+    OWNER_NUMBER: process.env.OWNER_NUMBER || "254786273945",
     AUTO_LIKE: process.env.STATUS_LIKE || "off",
     AUTO_READ_STATUS: process.env.AUTO_VIEW_STATUS || "on",
     AUTOREAD_MESSAGES: process.env.AUTO_READ_MESSAGES || "on",
@@ -23,7 +23,7 @@ module.exports = {
     A_REACT: process.env.AUTO_REACTION || 'on',
     L_S: process.env.STATUS_LIKE || 'on',
     AUTO_BLOCK: process.env.BLOCK_ALL || 'off',
-    URL: process.env.MENU_LINKS || 'https://files.catbox.moe/c2jdkw.jpg',
+    URL: process.env.MENU_LINKS || 'https://telegra.ph/file/d7b133573a5a3622775e6.jpg',
     MODE: process.env.BOT_MODE || "private",
     PM_PERMIT: process.env.PM_PERMIT || 'on',
     HEROKU_APP_NAME: process.env.HEROKU_APP_NAME,
